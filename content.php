@@ -29,12 +29,12 @@
 
 
 	<div class="post-content">
-		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'poor-richard' ) ); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'poor-richard' ),
-				'after'  => '</div>',
-			) );
-		?>
+	<?php if ( has_post_thumbnail()) : ?>
+	   <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+	   <?php the_post_thumbnail( 'homepage-thumb' ); ?>
+	   </a>
+	 <?php endif; ?>
+		<?php the_excerpt(); ?> 
+		<a href="<?php the_permalink(); ?>" class="button button-default button-keep-reading" title="See &quot;<?php the_title(); ?>&quot;">See more &rarr;</a>
 	</div><!-- .post-content -->
 </article><!-- #post-## -->

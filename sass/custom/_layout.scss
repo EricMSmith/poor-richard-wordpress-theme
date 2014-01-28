@@ -42,6 +42,8 @@ body {
     &:last-of-type {padding-bottom:1.75em}
 
     img {@extend pre}
+
+    img.attachment-thumbnail {float:left;margin-right:0.5em;}
 }
 
     .post-header {margin-bottom:3.125em; overflow:hidden}
@@ -69,6 +71,10 @@ body {
             a:hover {color:$text-color-link}
         }
     } 
+
+article.page {
+    margin-top: 1.75em;
+}
 
 .pagination {
     padding-top:.5em;

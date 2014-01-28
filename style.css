@@ -1246,12 +1246,12 @@ blockquote:before {
   text-align: left;
 }
 /* line 22, sass/custom/_sidebar.scss */
-.main-nav div.menu ul {
+.main-nav div ul {
   margin-top: 0;
   padding-left: 0;
 }
 /* line 26, sass/custom/_sidebar.scss */
-.main-nav div.menu ul li a {
+.main-nav div ul li a {
   display: block;
   width: 100%;
   line-height: 3.75rem;
@@ -1266,7 +1266,7 @@ blockquote:before {
   box-shadow: inset 0 1px 4px -2px gray;
 }
 /* line 31, sass/custom/_sidebar.scss */
-.main-nav div.menu ul li a:hover {
+.main-nav div ul li a:hover {
   background: #dd4b39;
   padding-left: 1.2em;
 }
@@ -1429,72 +1429,82 @@ body.nav-open {
 .post:last-of-type {
   padding-bottom: 1.75em;
 }
+/* line 46, sass/custom/_layout.scss */
+.post img.attachment-thumbnail {
+  float: left;
+  margin-right: 0.5em;
+}
 
-/* line 47, sass/custom/_layout.scss */
+/* line 49, sass/custom/_layout.scss */
 .post-header {
   margin-bottom: 3.125em;
   overflow: hidden;
 }
 
-/* line 49, sass/custom/_layout.scss */
+/* line 51, sass/custom/_layout.scss */
 .post-meta {
   font-size: .6875em;
   color: #999999;
   text-transform: uppercase;
 }
 
-/* line 50, sass/custom/_layout.scss */
+/* line 52, sass/custom/_layout.scss */
 .post-meta-data {
   padding-right: 2.25em;
 }
-/* line 54, sass/custom/_layout.scss */
+/* line 56, sass/custom/_layout.scss */
 .post-meta-data [class*="icon-"] {
   font-size: 1.5em;
   color: #333333;
   vertical-align: middle;
   margin: -2px 3px 0 0;
 }
-/* line 56, sass/custom/_layout.scss */
+/* line 58, sass/custom/_layout.scss */
 .post-meta-data:last-of-type {
   padding: 0;
 }
-/* line 57, sass/custom/_layout.scss */
+/* line 59, sass/custom/_layout.scss */
 .post-meta-data:only-of-type {
   padding: 0;
   float: left !important;
 }
 
-/* line 60, sass/custom/_layout.scss */
+/* line 62, sass/custom/_layout.scss */
 .share {
   margin: 3.75em 0;
 }
-/* line 63, sass/custom/_layout.scss */
+/* line 65, sass/custom/_layout.scss */
 .share h4 {
   color: #999999;
 }
-/* line 67, sass/custom/_layout.scss */
+/* line 69, sass/custom/_layout.scss */
 .share .social-media-share {
   margin-top: 0;
 }
-/* line 69, sass/custom/_layout.scss */
+/* line 71, sass/custom/_layout.scss */
 .share .social-media-share a:hover {
   color: #dd4b39;
 }
 
-/* line 73, sass/custom/_layout.scss */
+/* line 75, sass/custom/_layout.scss */
+article.page {
+  margin-top: 1.75em;
+}
+
+/* line 79, sass/custom/_layout.scss */
 .pagination {
   padding-top: .5em;
 }
-/* line 76, sass/custom/_layout.scss */
+/* line 82, sass/custom/_layout.scss */
 .pagination .older-posts {
   float: right;
 }
-/* line 77, sass/custom/_layout.scss */
+/* line 83, sass/custom/_layout.scss */
 .pagination .newer-posts {
   float: left;
 }
 
-/* line 80, sass/custom/_layout.scss */
+/* line 86, sass/custom/_layout.scss */
 .nav-links {
   padding: 1.75em 0;
   margin-bottom: 1.75em;

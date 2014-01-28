@@ -16,19 +16,18 @@
     </div>
     <div class="author">
         <figure class="author-avatar"><img class="avatar-image" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/author.jpg" alt=""></figure>
-        <header class="author-name">Eric M. Smith</header>
-        <p class="author-bio">Cincinnati, OH, USA</p>
+        <header class="author-name">Cincinnati, OH, USA</header>
     </div>
 
     <menu class="social-media-share">
-        <a href="#" class="icon-facebook" rel="external" title="My Facebook"></a>
-        <a href="#" class="icon-twitter" rel="external" title="My Twitter"></a>
-        <a href="#" class="icon-googleplus" rel="external" title="My Google+"></a>
-        <a href="#" class="icon-flickr" rel="external" title="My Flickr"></a>
-        <a href="#" class="icon-linkedin" rel="external" title="My LinkedIn"></a>
-        <a href="#" class="icon-pinterest" rel="external" title="My Pinterest"></a>
-        <a href="#" class="icon-github" rel="external" title="My GitHub"></a>
-        <a href="#" class="icon-youtube" rel="external" title="My YouTube"></a>
+        <a href="https://twitter.com/glimbit" class="icon-twitter" rel="external" title="My Twitter"></a>
+        <a href="https://www.facebook.com/pages/Eric-M-Smith-Artist/21617466325" class="icon-facebook" rel="external" title="My Facebook"></a>
+        <a href="https://plus.google.com/+Ericmsmith" class="icon-googleplus" rel="external" title="My Google+"></a>
+        <a href="http://glimbit.tumblr.com/" class="icon-tumblr" rel="external" title="My Tumblr"></a>
+        <a href="http://www.linkedin.com/pub/eric-smith/2/161/5bb" class="icon-linkedin" rel="external" title="My LinkedIn"></a>
+        <a href="http://www.pinterest.com/glimbit/glimbit-art/" class="icon-pinterest" rel="external" title="My Pinterest"></a>
+        <a href="http://www.youtube.com/user/glimbit/videos" class="icon-youtube" rel="external" title="My YouTube"></a>
+        <a href="https://github.com/EricMSmith" class="icon-github" rel="external" title="My GitHub"></a>
     </menu> 
     
     <?php get_footer(); ?>

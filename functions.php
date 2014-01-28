@@ -38,7 +38,9 @@ function poor_richard_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'homepage-thumb', 1400, 280, true ); //(cropped)
+
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

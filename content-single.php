@@ -5,58 +5,36 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+	<header class="post-header">
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
-		<div class="entry-meta">
-			<?php poor_richard_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<?php if ( 'post' == get_post_type() ) : ?>
+		<menu class="post-meta">
+	    <div class="post-meta-data"><i class="icon-datetime"></i>  <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?> </div>
+	    <?php
+				$tags_list = get_the_tag_list( '', ', ', ' ' );
+				if ( $tags_list ) :
+			?>
+
+			<div class="post-meta-data"><i class="icon-tags"></i>
+				<?php printf($tags_list); ?>
+			</div>
+			
+			<?php endif; // End if $tags_list ?>
+	    
+		</menu>
+
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php the_content(); ?>
+
+	<div class="post-content">
+		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'poor-richard' ) ); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'poor-richard' ),
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-meta">
-		<?php
-			/* translators: used between list items, there is a space after the comma */
-			$category_list = get_the_category_list( __( ', ', 'poor-richard' ) );
-
-			/* translators: used between list items, there is a space after the comma */
-			$tag_list = get_the_tag_list( '', __( ', ', 'poor-richard' ) );
-
-			if ( ! poor_richard_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'poor-richard' );
-				} else {
-					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'poor-richard' );
-				}
-
-			} else {
-				// But this blog has loads of categories so we should probably display them here
-				if ( '' != $tag_list ) {
-					$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'poor-richard' );
-				} else {
-					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'poor-richard' );
-				}
-
-			} // end check for categories on this blog
-
-			printf(
-				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink()
-			);
-		?>
-
-		<?php edit_post_link( __( 'Edit', 'poor-richard' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
+	</div><!-- .post-content -->
 </article><!-- #post-## -->
