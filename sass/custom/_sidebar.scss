@@ -1,0 +1,63 @@
+/**
+ * 
+ * Sidebar/Nav structure.
+ * 
+**/
+
+#main-sidebar {
+	height:100%; position:fixed; text-align:center; color:$text-color-bright;
+	@include background-size(cover !important);
+	background-image: url(assets/images/sidebar_bg.jpg);
+
+	a {text-decoration:none}
+	
+	/* tinted cover over the featured image */
+	&:before {background-color:rgba(112, 138, 144, .75); content:""; display:block; position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+}
+
+.sidebar-data-holder {position:relative; width:100%; height:100%; float:left}
+.main-nav {
+	position:absolute; width:15.75em; height:100%; background:$background-darkgrey; right:100%; z-index:100; text-align:left;
+
+	div.menu ul {
+		margin-top: 0;
+		padding-left: 0;
+
+		li a {
+    	display:block; width:100%; line-height:3.75rem; border:none; padding-left:1em; color:$text-color-bright; text-transform:uppercase; font-family:$font-family-bold;font-size: 13px;
+
+    	@include single-box-shadow(lighten($background-darkgrey, 30%), 0, 1px, 4px, -2px, inset);
+
+    	&:hover {background:$background-orange; padding-left:1.2em}
+    }
+  }
+}
+	.nav-control {
+		position:absolute; left:100%; width:3.75em; height:3.75em; background:$background-darkgrey;
+
+		.icon-hamburguer {font-size:1.75em; color:$text-color-bright}
+	}
+
+.logo {
+	font:2.375em 'Hammersmith One', sans-serif; margin:35% 20% 5%; text-transform: uppercase;
+	a {color:$text-color-bright; border:none}
+}
+
+.author-avatar {
+	padding:4px; width:6.25em; height:6.25em; background:$background-main; overflow:hidden; margin:0 auto;
+
+	@include single-box-shadow(rgba(0,0,0,.35), 0, 2px, 5px)
+}
+	.author-avatar,
+	.avatar-image {@include border-radius(9999px);}
+.author-name {font-family:$font-family-bold; text-transform:uppercase; margin:1em 0 .3em}
+.author-bio {padding:0 10%}
+
+.social-media-share {
+	margin-top:6%;
+	a {
+		color:$text-color-main; font-size:2.25em;
+
+		&:hover {color:$text-color-bright}
+	}
+}

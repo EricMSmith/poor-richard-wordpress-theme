@@ -1,0 +1,110 @@
+/*
+Theme Name: Poor Richard MK 2
+Theme URI: http://ericmsmith.com
+Author: Eric M Smith
+Author URI: http://ericmsmith.com
+Description: portfolio theme for ems
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: poor-richard
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ Poor Richard MK 2 is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*
+
+Project:    Sticko
+Version:    1.0
+Author:     Damián Muti :)
+Author URL: http://damianmuti.com
+
+
+-----------------------------------
+    TABLE OF CONTENTS
+-----------------------------------
+00 - Includes/imports.
+01 - Base & Global elements, utils.
+02 - Typography.
+03 - Sidebar/Header.
+04 - Layout & Main structure.
+05 - Footer.
+06 - Media queries.
+
+*/
+
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+
+
+
+/* ==================================================================================================================== */
+/*      00 - Includes/imports.                                                                                          */
+/* ==================================================================================================================== */
+
+@import "imports/base-min";
+@import "imports/grids-min";
+@import "compass/css3";
+@import "custom/variables";
+@import "custom/helpers";
+
+ 
+
+
+/* ==================================================================================================================== */
+/*      01 - Base & Global elements, utils.                                                                             */
+/* ==================================================================================================================== */
+
+@import "custom/lookandfeel";
+
+
+
+/* ==================================================================================================================== */
+/*      02 - Typography.                                                                                                */
+/* ==================================================================================================================== */
+
+@import "custom/typography";
+
+
+
+/* ==================================================================================================================== */
+/*      03 - Sidebar/Header.                                          			                                        */
+/* ==================================================================================================================== */
+
+@import "custom/sidebar";
+
+
+
+/* ==================================================================================================================== */
+/*      04 - Layout & Main structure.                                                                                   */
+/* ==================================================================================================================== */
+
+@import "custom/layout";
+
+
+
+/* ==================================================================================================================== */
+/*      05 - Footer.                   					                                                                */
+/* ==================================================================================================================== */
+
+@import "custom/footer";
+
+
+
+/* ==================================================================================================================== */
+/*      06 - Media queries.            					                                                                */
+/* ==================================================================================================================== */
+
+@import "custom/mediaqueries";
+
+
