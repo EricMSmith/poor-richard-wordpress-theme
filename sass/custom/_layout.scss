@@ -23,7 +23,7 @@ body {
 #main-content {position:relative; height:100%}
 
 #main {
-    padding:0 3.75em; margin-left:35%;
+    padding:0 3.75em; margin-left:33%;
     
     article a {color:$text-color-link}
 }
@@ -46,7 +46,7 @@ body {
     img.attachment-thumbnail {float:left;margin-right:0.5em;}
 }
 
-    .post-header {margin-bottom:3.125em; overflow:hidden}
+    .post-header {margin: 4em 0;}
 
     .post-meta {font-size:.6875em; color:$text-color-grey; text-transform:uppercase}
         .post-meta-data {
@@ -71,6 +71,32 @@ body {
             a:hover {color:$text-color-link}
         }
     } 
+
+#masonry-container {
+    margin-bottom:3.75em;
+}
+.masonry-item { 
+    padding:0.25em;
+    width: 25%; 
+    a, a:focus {
+        border-bottom:0;    
+        outline: 0;
+    }
+}
+
+.gallery-thumbnail {
+    padding:0.5em;
+    a, a:focus {
+        border-bottom:0;    
+        outline: 0;
+    }
+}
+
+a.gallery-caption-link, a.gallery-caption-link:visited {
+    color: $text-color-link;
+    font-family: $font-family-bold;
+    text-transform: uppercase;
+}
 
 article.page {
     margin-top: 1.75em;

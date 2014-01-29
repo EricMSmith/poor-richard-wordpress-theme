@@ -12,12 +12,12 @@
 		<menu class="post-meta">
 	    <div class="post-meta-data"><i class="icon-datetime"></i>  <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?> </div>
 	    <?php
-				$tags_list = get_the_tag_list( '', ', ', ' ' );
-				if ( $tags_list ) :
+				$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
+				if ( $categories_list ) :
 			?>
 
 			<div class="post-meta-data"><i class="icon-tags"></i>
-				<?php printf($tags_list); ?>
+				<?php printf($categories_list); ?>
 			</div>
 			
 			<?php endif; // End if $tags_list ?>

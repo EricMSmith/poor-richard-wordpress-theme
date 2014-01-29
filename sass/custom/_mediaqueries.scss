@@ -35,6 +35,8 @@ $bp-small-phones-p: 410px;
 		ul {margin-left:1.8em}
 		ol {margin-left:.9em}
 	}
+
+	.masonry-item { width: 33%; }
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape) {
@@ -63,6 +65,13 @@ $bp-small-phones-p: 410px;
 	    &:first-of-type {margin-top:1.75em}
 	    &:last-of-type {padding-bottom:1.75em}
 	}
+	
+	#main-footer {
+		position:absolute; bottom:0; width:100%; height:3.75em; background:$background-darkgrey; line-height:3.75em;
+		
+		p {font-size:.675em;}
+	}
+
 }
 
 @media screen and (max-width: bp-calculation($bp-tablets, "down")) and (orientation: landscape) {
@@ -79,9 +88,14 @@ $bp-small-phones-p: 410px;
 /* ==================================================================================================================== */
 /*      SMALL PHONES BREAKPOINT.             	                                                                        */
 /* ==================================================================================================================== */
+@media screen and (max-width: $bp-small-phones-l) {
+	.masonry-item { width: 100%; }
+}
+
 
 @media screen and (max-width: $bp-small-phones-l) and (orientation: portrait) {
   .logo {font-size:2em; margin-top:22%}
 	#main-sidebar {min-height:550px}
-	#main-footer p {font-size:.7em}	
+	#main-footer p {font-size:.7em}
+
 }

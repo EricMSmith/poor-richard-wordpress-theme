@@ -56,6 +56,13 @@ a {@include single-transition(all, .15s, ease); border-bottom:1px dotted; text-d
     a {color: $text-color-grey;}
     a:hover {color: $text-color-link;}
 }
+h1.page-title {
+  text-align:center;
+  border-bottom:0;
+  color: $text-color-grey;
+  font-size: 2em;
+  margin: 1.5em 0;
+}
 p, pre {margin:0 0 1em 0}
 pre,
 .pre-like {padding:1em; background:$background-lightgrey; border:1px dashed $background-borders}

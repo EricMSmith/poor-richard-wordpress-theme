@@ -21,6 +21,10 @@ get_header(); ?>
 	    </aside>
 	    <section id="main" class="pure-u-2-3">
 
+				<header class="post-header">
+					<h1 class="page-title"><?php the_title(); ?></h1>
+				</header><!-- .entry-header -->
+
 	        <?php
 							$temp = $wp_query; $wp_query= null;
 							$wp_query = new WP_Query(); $wp_query->query('showposts=5' . '&paged='.$paged);

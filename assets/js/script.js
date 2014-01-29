@@ -16,14 +16,26 @@ $(document).ready(function(){
 		$(this).attr('target', '_blank');
 	})
 	
-    /* Since Ghost does not support a post featured image yet, make an specific image the featured one. Thanks to Thomas Cullen (@ThomasCullen92) for this workaround. */ 
-	mainImage = $('img[alt="cover-image"]');
-    if ( mainImage.length > 0){
-        mainImageSource = mainImage.attr('src');
-        $('#main-sidebar').css('background', 'url('+mainImageSource+')');
-        mainImage.remove();
-    }
+    /* Masonry style display for portfolio thumbnails */
+    var container = document.querySelector('#masonry-container');
+    var msnry = new Masonry( container, {
+        // options
+        itemSelector: '.masonry-item'
+    });
 	
+    /* Magnific popup lightbox */
+    $('.gallery').magnificPopup({
+        delegate: 'a.gallery-popup', // child items selector, by clicking on it popup will open
+        gallery: {enabled:true},
+        type: 'image',        
+        image: {
+             titleSrc: function(item) {
+                return item.el.parents('.gallery-thumbnail').find('figcaption').html();
+             }
+        }
+    });
+
+
 });
 
 $(window).load(function(){
