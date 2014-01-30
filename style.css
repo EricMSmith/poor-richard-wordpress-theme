@@ -1384,6 +1384,11 @@ div[id^='___comments_'], div[id^='___comments_'] iframe {
   width: 100% !important;
 }
 
+/* line 33, sass/custom/_lookandfeel.scss */
+.not-found {
+  margin-bottom: 3.125em;
+}
+
 /* ==================================================================================================================== */
 /*      02 - Typography.                                                                                                */
 /* ==================================================================================================================== */
@@ -1430,103 +1435,113 @@ div[id^='___comments_'], div[id^='___comments_'] iframe {
 }
 
 /* line 15, sass/imports/_icon-font.scss */
-.icon-googleplus:before {
-  content: "\e60e";
-}
-
-/* line 18, sass/imports/_icon-font.scss */
-.icon-dribbble:before {
-  content: "\e60f";
-}
-
-/* line 21, sass/imports/_icon-font.scss */
-.icon-stumbleupon:before {
-  content: "\e610";
-}
-
-/* line 24, sass/imports/_icon-font.scss */
-.icon-lastfm:before {
-  content: "\e611";
-}
-
-/* line 27, sass/imports/_icon-font.scss */
-.icon-rdio:before {
-  content: "\e612";
-}
-
-/* line 30, sass/imports/_icon-font.scss */
-.icon-github:before {
-  content: "\e60d";
-}
-
-/* line 33, sass/imports/_icon-font.scss */
-.icon-code:before {
-  content: "\e600";
-}
-
-/* line 36, sass/imports/_icon-font.scss */
 .icon-hamburguer:before {
   content: "\e601";
 }
 
-/* line 39, sass/imports/_icon-font.scss */
+/* line 18, sass/imports/_icon-font.scss */
 .icon-datetime:before {
   content: "\e602";
 }
 
-/* line 42, sass/imports/_icon-font.scss */
-.icon-shortlink:before {
-  content: "\e603";
-}
-
-/* line 45, sass/imports/_icon-font.scss */
-.icon-tags:before {
-  content: "\e604";
-}
-
-/* line 48, sass/imports/_icon-font.scss */
-.icon-blockquote:before, blockquote:before {
-  content: "\e605";
-}
-
-/* line 51, sass/imports/_icon-font.scss */
-.icon-vimeo:before {
-  content: "\e606";
-}
-
-/* line 54, sass/imports/_icon-font.scss */
-.icon-twitter:before {
-  content: "\e607";
-}
-
-/* line 57, sass/imports/_icon-font.scss */
-.icon-pinterest:before {
-  content: "\e608";
-}
-
-/* line 60, sass/imports/_icon-font.scss */
-.icon-linkedin:before {
-  content: "\e609";
-}
-
-/* line 63, sass/imports/_icon-font.scss */
-.icon-lastfm:before {
-  content: "\e60a";
-}
-
-/* line 66, sass/imports/_icon-font.scss */
-.icon-youtube:before {
-  content: "\e613";
-}
-
-/* line 69, sass/imports/_icon-font.scss */
+/* line 21, sass/imports/_icon-font.scss */
 .icon-flickr:before {
   content: "\e60b";
 }
 
-/* line 72, sass/imports/_icon-font.scss */
+/* line 24, sass/imports/_icon-font.scss */
 .icon-facebook:before {
   content: "\e60c";
+}
+
+/* line 27, sass/imports/_icon-font.scss */
+.icon-tags:before {
+  content: "\e604";
+}
+
+/* line 30, sass/imports/_icon-font.scss */
+.icon-shortlink:before {
+  content: "\e603";
+}
+
+/* line 33, sass/imports/_icon-font.scss */
+.icon-blockquote:before, blockquote:before {
+  content: "\e605";
+}
+
+/* line 36, sass/imports/_icon-font.scss */
+.icon-feed:before {
+  content: "\e614";
+}
+
+/* line 39, sass/imports/_icon-font.scss */
+.icon-mail:before {
+  content: "\e615";
+}
+
+/* line 42, sass/imports/_icon-font.scss */
+.icon-youtube:before {
+  content: "\e613";
+}
+
+/* line 45, sass/imports/_icon-font.scss */
+.icon-vimeo:before {
+  content: "\e606";
+}
+
+/* line 48, sass/imports/_icon-font.scss */
+.icon-twitter:before {
+  content: "\e607";
+}
+
+/* line 51, sass/imports/_icon-font.scss */
+.icon-pinterest:before {
+  content: "\e608";
+}
+
+/* line 54, sass/imports/_icon-font.scss */
+.icon-linkedin:before {
+  content: "\e609";
+}
+
+/* line 57, sass/imports/_icon-font.scss */
+.icon-lastfm:before {
+  content: "\e60a";
+}
+
+/* line 60, sass/imports/_icon-font.scss */
+.icon-code:before {
+  content: "\e600";
+}
+
+/* line 63, sass/imports/_icon-font.scss */
+.icon-github:before {
+  content: "\e60d";
+}
+
+/* line 66, sass/imports/_icon-font.scss */
+.icon-googleplus:before {
+  content: "\e60e";
+}
+
+/* line 69, sass/imports/_icon-font.scss */
+.icon-dribbble:before {
+  content: "\e60f";
+}
+
+/* line 72, sass/imports/_icon-font.scss */
+.icon-stumbleupon:before {
+  content: "\e610";
+}
+
+/* line 75, sass/imports/_icon-font.scss */
+.icon-lastfm:before {
+  content: "\e611";
+}
+
+/* line 78, sass/imports/_icon-font.scss */
+.icon-rdio:before {
+  content: "\e612";
 }
 
 /* line 29, sass/custom/_typography.scss */
@@ -1631,15 +1646,14 @@ h1.page-title {
   border-bottom: 0;
   color: #999999;
   font-size: 2em;
-  margin: 1.5em 0;
 }
 
-/* line 66, sass/custom/_typography.scss */
+/* line 65, sass/custom/_typography.scss */
 p, pre, .post img {
   margin: 0 0 1em 0;
 }
 
-/* line 68, sass/custom/_typography.scss */
+/* line 67, sass/custom/_typography.scss */
 pre, .post img,
 .pre-like {
   padding: 1em;
@@ -1647,24 +1661,24 @@ pre, .post img,
   border: 1px dashed #dadada;
 }
 
-/* line 69, sass/custom/_typography.scss */
+/* line 68, sass/custom/_typography.scss */
 strong {
   font-family: "Hammersmith One", sans-serif;
 }
 
-/* line 70, sass/custom/_typography.scss */
+/* line 69, sass/custom/_typography.scss */
 em, blockquote {
   font-style: italic;
   color: #999999;
 }
 
-/* line 71, sass/custom/_typography.scss */
+/* line 70, sass/custom/_typography.scss */
 blockquote {
   margin: 3.125em 0;
   padding-left: 4em;
   position: relative;
 }
-/* line 73, sass/custom/_typography.scss */
+/* line 72, sass/custom/_typography.scss */
 blockquote:before {
   font-family: 'icon-font';
   font-style: normal;
@@ -1675,41 +1689,41 @@ blockquote:before {
   left: -7px;
 }
 
-/* line 76, sass/custom/_typography.scss */
+/* line 75, sass/custom/_typography.scss */
 .post-content ul, .post-content ol {
   padding: 0;
   line-height: 240%;
   list-style: none;
   margin: 3.125em 0;
 }
-/* line 79, sass/custom/_typography.scss */
+/* line 78, sass/custom/_typography.scss */
 .post-content ul li:before, .post-content ol li:before {
   font-family: "Hammersmith One", sans-serif;
   display: block;
   float: left;
   text-align: right;
 }
-/* line 81, sass/custom/_typography.scss */
+/* line 80, sass/custom/_typography.scss */
 .post-content ul ul, .post-content ul ol, .post-content ol ul, .post-content ol ol {
   margin: 0 1.3em;
 }
-/* line 83, sass/custom/_typography.scss */
+/* line 82, sass/custom/_typography.scss */
 .post-content ul {
   margin-left: 3.8em;
 }
-/* line 85, sass/custom/_typography.scss */
+/* line 84, sass/custom/_typography.scss */
 .post-content ul li:before {
   content: "•";
   font-size: 170%;
   vertical-align: top;
   margin-right: 0.4em;
 }
-/* line 87, sass/custom/_typography.scss */
+/* line 86, sass/custom/_typography.scss */
 .post-content ol {
   counter-reset: item;
   margin-left: 2.4em;
 }
-/* line 89, sass/custom/_typography.scss */
+/* line 88, sass/custom/_typography.scss */
 .post-content ol li:before {
   content: counter(item) ". ";
   counter-increment: item;
@@ -1717,7 +1731,7 @@ blockquote:before {
   margin-right: .7em;
 }
 
-/* line 93, sass/custom/_typography.scss */
+/* line 92, sass/custom/_typography.scss */
 .hidden {
   text-indent: -9999px;
   visibility: hidden;
@@ -1974,103 +1988,113 @@ body.nav-open {
   margin: 4em 0;
 }
 
-/* line 51, sass/custom/_layout.scss */
+/* line 50, sass/custom/_layout.scss */
+.page-header {
+  margin: 5em 0;
+}
+
+/* line 52, sass/custom/_layout.scss */
 .post-meta {
   font-size: .6875em;
   color: #999999;
   text-transform: uppercase;
 }
 
-/* line 52, sass/custom/_layout.scss */
+/* line 53, sass/custom/_layout.scss */
 .post-meta-data {
   padding-right: 2.25em;
 }
-/* line 56, sass/custom/_layout.scss */
+/* line 57, sass/custom/_layout.scss */
 .post-meta-data [class*="icon-"] {
   font-size: 1.5em;
   color: #333333;
   vertical-align: middle;
   margin: -2px 3px 0 0;
 }
-/* line 58, sass/custom/_layout.scss */
+/* line 59, sass/custom/_layout.scss */
 .post-meta-data:last-of-type {
   padding: 0;
 }
-/* line 59, sass/custom/_layout.scss */
+/* line 60, sass/custom/_layout.scss */
 .post-meta-data:only-of-type {
   padding: 0;
   float: left !important;
 }
 
-/* line 62, sass/custom/_layout.scss */
+/* line 63, sass/custom/_layout.scss */
 .share {
   margin: 3.75em 0;
 }
-/* line 65, sass/custom/_layout.scss */
+/* line 66, sass/custom/_layout.scss */
 .share h4 {
   color: #999999;
 }
-/* line 69, sass/custom/_layout.scss */
+/* line 70, sass/custom/_layout.scss */
 .share .social-media-share {
   margin-top: 0;
 }
-/* line 71, sass/custom/_layout.scss */
+/* line 72, sass/custom/_layout.scss */
 .share .social-media-share a:hover {
   color: #dd4b39;
 }
 
-/* line 75, sass/custom/_layout.scss */
+/* line 76, sass/custom/_layout.scss */
 #masonry-container {
   margin-bottom: 3.75em;
 }
 
-/* line 78, sass/custom/_layout.scss */
+/* line 79, sass/custom/_layout.scss */
 .masonry-item {
   padding: 0.25em;
   width: 25%;
 }
-/* line 81, sass/custom/_layout.scss */
+/* line 82, sass/custom/_layout.scss */
 .masonry-item a, .masonry-item a:focus {
   border-bottom: 0;
   outline: 0;
 }
 
-/* line 87, sass/custom/_layout.scss */
+/* line 88, sass/custom/_layout.scss */
 .gallery-thumbnail {
   padding: 0.5em;
 }
-/* line 89, sass/custom/_layout.scss */
+/* line 90, sass/custom/_layout.scss */
 .gallery-thumbnail a, .gallery-thumbnail a:focus {
   border-bottom: 0;
   outline: 0;
 }
 
-/* line 95, sass/custom/_layout.scss */
+/* line 96, sass/custom/_layout.scss */
 a.gallery-caption-link, a.gallery-caption-link:visited {
   color: #dd4b39;
   font-family: "Hammersmith One", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 101, sass/custom/_layout.scss */
-article.page {
-  margin-top: 1.75em;
+/* line 102, sass/custom/_layout.scss */
+article.post {
+  padding-bottom: 3.5em;
 }
 
-/* line 105, sass/custom/_layout.scss */
+/* line 104, sass/custom/_layout.scss */
+article.page {
+  margin-top: 2.75em;
+}
+
+/* line 108, sass/custom/_layout.scss */
 .pagination {
   padding-top: .5em;
 }
-/* line 108, sass/custom/_layout.scss */
+/* line 111, sass/custom/_layout.scss */
 .pagination .older-posts {
   float: right;
 }
-/* line 109, sass/custom/_layout.scss */
+/* line 112, sass/custom/_layout.scss */
 .pagination .newer-posts {
   float: left;
 }
 
-/* line 112, sass/custom/_layout.scss */
+/* line 115, sass/custom/_layout.scss */
 .nav-links {
   padding: 1.75em 0;
   margin-bottom: 1.75em;
@@ -2095,7 +2119,7 @@ article.page {
 }
 /* line 10, sass/custom/_footer.scss */
 #main-footer p {
-  font-size: .675em;
+  font-size: .875em;
 }
 /* line 11, sass/custom/_footer.scss */
 #main-footer a {
@@ -2164,23 +2188,33 @@ article.page {
   }
 
   /* line 39, sass/custom/_mediaqueries.scss */
+  article.post {
+    padding-bottom: 1.5em;
+  }
+
+  /* line 41, sass/custom/_mediaqueries.scss */
+  .page-header {
+    margin: 2.5em 0;
+  }
+
+  /* line 43, sass/custom/_mediaqueries.scss */
   .masonry-item {
     width: 33%;
   }
 }
 @media screen and (max-width: 800px) and (orientation: landscape) {
-  /* line 43, sass/custom/_mediaqueries.scss */
+  /* line 47, sass/custom/_mediaqueries.scss */
   .logo {
     margin: 4% 0 2%;
   }
 
-  /* line 44, sass/custom/_mediaqueries.scss */
+  /* line 48, sass/custom/_mediaqueries.scss */
   .social-media-share {
     margin-top: 4%;
   }
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  /* line 48, sass/custom/_mediaqueries.scss */
+  /* line 52, sass/custom/_mediaqueries.scss */
   #main-sidebar {
     max-height: 600px;
   }
@@ -2189,36 +2223,46 @@ article.page {
 /*      PHONES BREAKPOINT.                   	                                                                        */
 /* ==================================================================================================================== */
 @media screen and (max-width: 1023px) {
-  /* line 58, sass/custom/_mediaqueries.scss */
+  /* line 62, sass/custom/_mediaqueries.scss */
   .logo {
     font-size: 2.75em;
     margin-top: 10%;
   }
 
-  /* line 59, sass/custom/_mediaqueries.scss */
+  /* line 63, sass/custom/_mediaqueries.scss */
   .author-bio {
     font-size: 90%;
   }
 
-  /* line 60, sass/custom/_mediaqueries.scss */
+  /* line 64, sass/custom/_mediaqueries.scss */
   #main {
     padding: 0 1.75em 1.75em;
   }
 
-  /* line 62, sass/custom/_mediaqueries.scss */
+  /* line 66, sass/custom/_mediaqueries.scss */
   .post {
     margin-top: 6.25em;
   }
-  /* line 65, sass/custom/_mediaqueries.scss */
+  /* line 69, sass/custom/_mediaqueries.scss */
   .post:first-of-type {
     margin-top: 1.75em;
   }
-  /* line 66, sass/custom/_mediaqueries.scss */
+  /* line 70, sass/custom/_mediaqueries.scss */
   .post:last-of-type {
     padding-bottom: 1.75em;
   }
 
-  /* line 69, sass/custom/_mediaqueries.scss */
+  /* line 72, sass/custom/_mediaqueries.scss */
+  article.post {
+    padding-bottom: 0em;
+  }
+
+  /* line 74, sass/custom/_mediaqueries.scss */
+  .page-header {
+    margin: 1em 0;
+  }
+
+  /* line 76, sass/custom/_mediaqueries.scss */
   #main-footer {
     position: absolute;
     bottom: 0;
@@ -2227,24 +2271,24 @@ article.page {
     background: #333333;
     line-height: 3.75em;
   }
-  /* line 72, sass/custom/_mediaqueries.scss */
+  /* line 79, sass/custom/_mediaqueries.scss */
   #main-footer p {
     font-size: .675em;
   }
 }
 @media screen and (max-width: 1023px) and (orientation: landscape) {
-  /* line 78, sass/custom/_mediaqueries.scss */
+  /* line 85, sass/custom/_mediaqueries.scss */
   #main-sidebar {
     min-height: 500px;
   }
 }
 @media screen and (max-width: 600px) and (orientation: portrait) {
-  /* line 82, sass/custom/_mediaqueries.scss */
+  /* line 89, sass/custom/_mediaqueries.scss */
   .logo {
     margin-top: 20%;
   }
 
-  /* line 83, sass/custom/_mediaqueries.scss */
+  /* line 90, sass/custom/_mediaqueries.scss */
   .social-media-share {
     margin-top: 4%;
   }
@@ -2253,24 +2297,24 @@ article.page {
 /*      SMALL PHONES BREAKPOINT.             	                                                                        */
 /* ==================================================================================================================== */
 @media screen and (max-width: 480px) {
-  /* line 92, sass/custom/_mediaqueries.scss */
+  /* line 99, sass/custom/_mediaqueries.scss */
   .masonry-item {
     width: 100%;
   }
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
-  /* line 97, sass/custom/_mediaqueries.scss */
+  /* line 104, sass/custom/_mediaqueries.scss */
   .logo {
     font-size: 2em;
     margin-top: 22%;
   }
 
-  /* line 98, sass/custom/_mediaqueries.scss */
+  /* line 105, sass/custom/_mediaqueries.scss */
   #main-sidebar {
     min-height: 550px;
   }
 
-  /* line 99, sass/custom/_mediaqueries.scss */
+  /* line 106, sass/custom/_mediaqueries.scss */
   #main-footer p {
     font-size: .7em;
   }

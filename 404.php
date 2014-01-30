@@ -6,9 +6,13 @@
  */
 
 get_header(); ?>
+<body <?php body_class(); ?>>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	  <div id="main-content" role="main" class="pure-g-r">
+	    <aside id="main-sidebar" class="pure-u-1-3" <?php if ( has_post_thumbnail() ) { $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'single-post-thumbnail' ); ?>style="background-image: url('<?php echo $image[0]; ?>')"<?php } ?>>
+        <?php get_sidebar(); ?>
+	    </aside>
+	    <section id="main" class="pure-u-2-3">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
@@ -16,9 +20,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'poor-richard' ); ?></p>
-
-					<?php get_search_form(); ?>
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below?', 'poor-richard' ); ?></p>
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
@@ -41,16 +43,12 @@ get_header(); ?>
 
 					<?php
 					/* translators: %1$s: smiley */
-					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'poor-richard' ), convert_smilies( ':)' ) ) . '</p>';
+					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives.', 'poor-richard' ) ) . '</p>';
 					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_footer(); ?>
+		</section><!-- #main -->
+		</div><!-- #main-content -->
+<?php get_template_part( 'bottomer' ); ?>

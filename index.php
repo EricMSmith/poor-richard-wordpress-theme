@@ -20,7 +20,7 @@ get_header(); ?>
 	    </aside>
 	    <section id="main" class="pure-u-2-3">
 
-	    	<header class="post-header"><h1 class="page-title">Samples from my <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/Portfolio">Portfolio</a></h1></header>
+	    	<header class="page-header"><h1 class="page-title">Samples from my <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/Portfolio">Portfolio</a></h1></header>
 	    	
 	    	<div class="pure-g-r gallery">
 	    	<?php query_posts(array(
@@ -47,7 +47,7 @@ get_header(); ?>
 				<?php wp_reset_query(); ?>
 				</div> <!-- /.gallery -->
 
-	    	<header class="post-header"><h1 class="page-title">Recent <a href="<?php echo esc_url( home_url( '/' ) ); ?>/blog">Blog</a> Posts</h1></header>
+	    	<header class="page-header"><h1 class="page-title">Recent <a href="<?php echo esc_url( home_url( '/' ) ); ?>/blog">Blog</a> Posts</h1></header>
 
 	        <?php if ( have_posts() ) : ?>
 

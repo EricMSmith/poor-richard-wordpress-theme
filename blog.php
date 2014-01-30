@@ -21,7 +21,7 @@ get_header(); ?>
 	    </aside>
 	    <section id="main" class="pure-u-2-3">
 
-				<header class="post-header">
+				<header class="page-header">
 					<h1 class="page-title"><?php the_title(); ?></h1>
 				</header><!-- .entry-header -->
 

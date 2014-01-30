@@ -47,8 +47,9 @@ body {
 }
 
     .post-header {margin: 4em 0;}
+    .page-header {margin: 5em 0;}
 
-    .post-meta {font-size:.6875em; color:$text-color-grey; text-transform:uppercase}
+    .post-meta {font-size:.6875em; color:$text-color-grey; text-transform:uppercase;}
         .post-meta-data {
             padding-right:2.25em;
             @extend .pull-left;
@@ -98,8 +99,10 @@ a.gallery-caption-link, a.gallery-caption-link:visited {
     text-transform: uppercase;
 }
 
+article.post {padding-bottom:3.5em;}
+
 article.page {
-    margin-top: 1.75em;
+    margin-top: 2.75em;
 }
 
 .pagination {

@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="post-header">
+			<header class="page-header">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
@@ -89,7 +89,9 @@ get_header(); ?>
 						<?php get_template_part( 'content', 'portfolio' ); ?>
 
 
+
 				</div>
+				<?php get_template_part( 'share' ); ?>
 			<?php else : ?>
 
 				<?php /* Start the Loop */ ?>
