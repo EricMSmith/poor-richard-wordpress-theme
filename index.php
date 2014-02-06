@@ -65,6 +65,15 @@ get_header(); ?>
 						<?php endwhile; ?>
 
 						<?php// poor_richard_paging_nav(); ?>
+						<nav class="pagination">
+							<div class="nav-links">
+								<div class="pull-right">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>/blog" rel="prev">
+										See blog <span class="meta-nav">→</span>
+									</a>
+								</div>
+							</div>
+						</nav>
 
 					<?php else : ?>
 

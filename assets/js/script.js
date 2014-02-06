@@ -18,10 +18,13 @@ $(document).ready(function(){
 	
     /* Masonry style display for portfolio thumbnails */
     var container = document.querySelector('#masonry-container');
-    var msnry = new Masonry( container, {
-        // options
-        itemSelector: '.masonry-item'
+    var msnry;
+    // initialize Masonry after all images have loaded.
+    imagesLoaded( container, function() {
+        msnry = new Masonry( container );
     });
+
+
 	
     /* Magnific popup lightbox */
     $('.gallery').magnificPopup({
