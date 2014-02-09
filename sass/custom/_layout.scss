@@ -23,7 +23,7 @@ body {
 #main-content {position:relative; height:100%}
 
 #main {
-    padding:0 3.75em; margin-left:33%;
+    padding:0 3.75em; margin-left:34%;
     
     article a {color:$text-color-link}
 }
@@ -77,8 +77,8 @@ body {
     margin-bottom:3.75em;
 }
 .masonry-item { 
-    padding:0.25em;
-    width: 25%; 
+
+    width: 19%; 
     a, a:focus {
         border-bottom:0;    
         outline: 0;
@@ -86,7 +86,7 @@ body {
 }
 
 .gallery-thumbnail {
-    padding:0.5em;
+    padding:0.25em;
     a, a:focus {
         border-bottom:0;    
         outline: 0;

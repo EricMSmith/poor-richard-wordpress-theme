@@ -22,7 +22,7 @@ get_header(); ?>
 
 	    	<header class="page-header"><h1 class="page-title">Samples from my <a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/Portfolio">Portfolio</a></h1></header>
 	    	
-	    	<div class="pure-g-r gallery">
+	    	<div id="masonry-container" class="gallery">
 	    	<?php query_posts(array(
 					'showposts' => 5,
 					'orderby' => 'rand',
@@ -32,15 +32,7 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<div class="pure-u-1-5 gallery-image-container">
-					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'single-post-thumbnail' );		 ?>			
-						<div class="gallery-thumbnail">
-							<a href="<?php echo $image[0]; ?>" title="<?php the_title_attribute(); ?>" class="gallery-popup">
-				   			<?php the_post_thumbnail( 'large' ); ?>
-				   		</a>
-				   		<figcaption class="hidden"><?php the_title_attribute(); ?><span class="sep"> | </span><a href="<?php the_permalink(); ?>" class="gallery-caption-link">original post</a></figcaption>	
-			 			</div>
-			 		</div>
+					<?php get_template_part( 'gallery-thumbnails' ); ?>
 
 				<?php endwhile; ?>
 

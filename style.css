@@ -6,7 +6,7 @@ Theme URI: http://ericmsmith.com
 Author: Eric M Smith
 Author URI: http://ericmsmith.com
 Description: portfolio theme for ems
-Version: 1.0
+Version: 1.0.1
 License: GNU General Public License
 License URI: license.txt
 Text Domain: poor-richard
@@ -1952,7 +1952,7 @@ body.nav-open {
 /* line 25, sass/custom/_layout.scss */
 #main {
   padding: 0 3.75em;
-  margin-left: 33%;
+  margin-left: 34%;
 }
 /* line 28, sass/custom/_layout.scss */
 #main article a {
@@ -2045,8 +2045,7 @@ body.nav-open {
 
 /* line 79, sass/custom/_layout.scss */
 .masonry-item {
-  padding: 0.25em;
-  width: 25%;
+  width: 19%;
 }
 /* line 82, sass/custom/_layout.scss */
 .masonry-item a, .masonry-item a:focus {
@@ -2056,7 +2055,7 @@ body.nav-open {
 
 /* line 88, sass/custom/_layout.scss */
 .gallery-thumbnail {
-  padding: 0.5em;
+  padding: 0.25em;
 }
 /* line 90, sass/custom/_layout.scss */
 .gallery-thumbnail a, .gallery-thumbnail a:focus {
